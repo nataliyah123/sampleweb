@@ -18,7 +18,8 @@ var commentRouter=require("./routes/comment")
 var authRouter=require("./routes/authenticate")
 
 var exp=exps();
-mongoose.connect("mongodb://localhost/yelp_basic_v6",{ useMongoClient: true });
+// mongoose.connect("mongodb://localhost/yelp_basic_v6",{ useMongoClient: true });
+mongoose.connect("mongodb://ibia:ibia@ds129966.mlab.com:29966/yelp_camp")
 mongoose.Promise = global.Promise; 
 exp.use(exps.static(__dirname+"/public"))
 exp.use(flash());
