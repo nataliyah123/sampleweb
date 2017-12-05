@@ -1,0 +1,26 @@
+.thumbnail .image-responsive{
+    width:100%;
+    
+}
+.thumbnail{
+    padding:0px;
+}
+
+.thumbnail .caption-full{
+    padding:9px;
+}
+body {
+    
+    background-color: #cfebfd;
+}
+
+#addnewcomments{
+    
+    border:1px solid #e6e6e6;
+    margin-top: 40px;
+}
+
+#delete-camp-form{
+    
+    display:inline;
+}
