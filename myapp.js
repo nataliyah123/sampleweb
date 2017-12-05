@@ -1,3 +1,4 @@
+var session=require("cookie-session")
 var exps=require("express");
 // var exp=exps();
 var requ=require("request");
@@ -25,12 +26,22 @@ exp.use(flash());
 exp.use(bodyparser.urlencoded({extended:true}));
 exp.use(methodoverride("_method"))
 exp.set("view engine","ejs");
-exp.use(require("express-session")(
-    {
-        secret:"what the hell is your problem",
-        resave:false,
-        saveUninitialized:false
-    }))
+// exp.use(require("express-session")(
+//     {
+//         secret:"what the hell is your problem",
+//         resave:false,
+//         saveUninitialized:false
+//     }))
+var expiryDate = new Date(Date.now() + 60 * 60 * 1000) // 1 hour
+exp.use(session({
+  name: 'session',
+  keys: ['key1', 'key2'],
+  cookie: {
+    secure: true,
+    httpOnly: true,
+    expires: expiryDate
+  }
+}))
 
 exp.use(passport.initialize());
 exp.use(passport.session());

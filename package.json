@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node myapp.js"
+    "start": "node myapp.js"
   },
   "author": "ibia (sumaira)",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.2",
     "connect-flash": "^0.1.1",
+    "cookie-session": "^2.0.0-beta.3",
     "ejs": "^2.5.7",
     "express": "^4.16.1",
     "express-session": "^1.15.6",
