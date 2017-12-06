@@ -1,4 +1,4 @@
-var session=require("cookie-session")
+var session=require("cookie-session");
 var exps=require("express");
 // var exp=exps();
 var requ=require("request");
@@ -7,18 +7,19 @@ var mongoose=require("mongoose");
 var User=require("./models/user");
 var flash=require("connect-flash");
 var passport=require("passport");
-var passportlocal=require("passport-local")
-var passportlocalmongoose=require("passport-local-mongoose")
+var passportlocal=require("passport-local");
+var passportlocalmongoose=require("passport-local-mongoose");
 var seedDB=require("./seed");
-var methodoverride=require("method-override")
-var Campground=require("./models/campground.js")
-var Comment=require("./models/Comment.js")
-var campgroundRouter=require("./routes/campground")
-var commentRouter=require("./routes/comment")
-var authRouter=require("./routes/authenticate")
+var methodoverride=require("method-override");
+var Campground=require("./models/campground.js");
+var Comment=require("./models/Comment.js");
+var campgroundRouter=require("./routes/campground");
+var commentRouter=require("./routes/comment");
+var authRouter=require("./routes/authenticate");
 
 var exp=exps();
-var url=process.env.DATABASEURL||"mongodb://localhost/yelp_basic_v6"
+console.log(process.env.DATABASEURL)
+var url=process.env.DATABASEURL||"mongodb://localhost/yelp_basic_v6";
 // mongoose.connect("mongodb://localhost/yelp_basic_v6",{ useMongoClient: true });
 // mongoose.connect("mongodb://ibia:ibia@ds111882.mlab.com:11882/yelp_camp",{ useMongoClient: true })
 mongoose.connect(url,{useMongoClient:true});
