@@ -18,10 +18,12 @@ var commentRouter=require("./routes/comment")
 var authRouter=require("./routes/authenticate")
 
 var exp=exps();
+var url=process.env.DATABASEURL||"mongodb://localhost/yelp_basic_v6"
 // mongoose.connect("mongodb://localhost/yelp_basic_v6",{ useMongoClient: true });
-mongoose.connect("mongodb://ibia:ibia@ds111882.mlab.com:11882/yelp_camp",{ useMongoClient: true })
+// mongoose.connect("mongodb://ibia:ibia@ds111882.mlab.com:11882/yelp_camp",{ useMongoClient: true })
+mongoose.connect(url,{useMongoClient:true});
 mongoose.Promise = global.Promise; 
-exp.use(exps.static(__dirname+"/public"))
+exp.use(exps.static(__dirname+"/public"));
 exp.use(flash());
 // seedDB();
 exp.use(bodyparser.urlencoded({extended:true}));
