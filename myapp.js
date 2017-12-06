@@ -20,11 +20,11 @@ var authRouter=require("./routes/authenticate");
 var exp=exps();
 console.log(process.env.DATABASEURL);
 mongoose.Promise = global.Promise;
-const url=process.env.DATABASEURL || "mongodb://localhost/yelp_basic_v6";
+// const url=process.env.DATABASEURL || "mongodb://localhost/yelp_basic_v6";
       
 // mongoose.connect("mongodb://localhost/yelp_basic_v6",{ useMongoClient: true });
-// mongoose.connect("mongodb://ibia:ibia@ds111882.mlab.com:11882/yelp_camp",{ useMongoClient: true })
-mongoose.connect(url,{useMongoClient:true})
+mongoose.connect("mongodb://ibia:ibia@ds111882.mlab.com:11882/yelp_camp",{ useMongoClient: true })
+// mongoose.connect(url,{useMongoClient:true})
 //       .then(() => console.log(`Database connected!`))
 //       .catch(err => console.log(`Database connection error: ${err.message}`));
 mongoose.Promise = global.Promise; 
