@@ -19,7 +19,7 @@ var authRouter=require("./routes/authenticate")
 
 var exp=exps();
 // mongoose.connect("mongodb://localhost/yelp_basic_v6",{ useMongoClient: true });
-mongoose.connect("mongodb://ibia:ibia@ds129966.mlab.com:29966/yelp_camp",{ useMongoClient: true })
+mongoose.connect("mongodb://ibia:ibia>@ds111882.mlab.com:11882/yelp_camp",{ useMongoClient: true })
 mongoose.Promise = global.Promise; 
 exp.use(exps.static(__dirname+"/public"))
 exp.use(flash());
