@@ -39,7 +39,7 @@ exp.use(session({
   keys: ['key1', 'key2'],
   cookie: {
     secure: true,
-    httpOnly: true,
+    // httpOnly: true,
     expires: expiryDate
   }
 }))
