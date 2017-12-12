@@ -40,18 +40,22 @@ h1{
     background-repeat: no-repeat;
     opacity:0;
     z-index: 0;
+    image-rendering: pixelated;
     animation:myAnimation 50s linear infinite;
 }
 .slideshow li:nth-child(1){
     background-image: url(images/image1.jpg);
+    image-rendering: pixelated;
     /*animation-delay: 10s*/
 }
 .slideshow li:nth-child(2){
     background-image: url(images/image2.jpg);
+    image-rendering: pixelated;
     animation-delay: 10s
 } 
 .slideshow li:nth-child(3){
     background-image: url(images/image3.jpg);
+    image-rendering: pixelated;
     animation-delay: 20s
 } 
 .slideshow li:nth-child(4){
