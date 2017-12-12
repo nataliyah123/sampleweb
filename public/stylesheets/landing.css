@@ -51,35 +51,35 @@ h1{
 .slideshow li:nth-child(2){
     background-image: url(images/image2.jpg);
     image-rendering: crisp-edges;
-    animation-delay: 10s
+    animation-delay: 5s
 } 
 .slideshow li:nth-child(3){
-    background-image: url(images/image3.jpg);
+    background-image: url(images/image9.jpg);
     image-rendering: crisp-edges;
-    animation-delay: 20s
+    animation-delay: 10s
 } 
 .slideshow li:nth-child(4){
     background-image: url(images/image4.jpg);
-    animation-delay: 30s
+    animation-delay: 15s
 } 
 .slideshow li:nth-child(5){
-    background-image: url(images/image5.jpg);
-    animation-delay: 40s
+    background-image: url(images/image8.jpg);
+    animation-delay: 20s
 } 
 @keyframes myAnimation{
     0%{
         opacity: 0; 
         animation-timing-function: ease-in;
     }
-    10%{
+    5%{
         opacity:1;
         animation-timing-function: ease-in-out;
     }
-    20%{
+    10%{
         opacity: 1; 
         
     }
-     30%{
+     15%{
         opacity: 0; 
         
     }
