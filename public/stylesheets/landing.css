@@ -43,23 +43,23 @@ h1{
     animation:myAnimation 50s linear infinite;
 }
 .slideshow li:nth-child(1){
-    background-image: url(images/download1.jpg);
+    background-image: url(images/image1.jpg);
     /*animation-delay: 10s*/
 }
 .slideshow li:nth-child(2){
-    background-image: url(images/download2.jpg);
+    background-image: url(images/image2.jpg);
     animation-delay: 10s
 } 
 .slideshow li:nth-child(3){
-    background-image: url(images/images5.jpg);
+    background-image: url(images/image3.jpg);
     animation-delay: 20s
 } 
 .slideshow li:nth-child(4){
-    background-image: url(images/images2.jpg);
+    background-image: url(images/image4.jpg);
     animation-delay: 30s
 } 
 .slideshow li:nth-child(5){
-    background-image: url(images/images4.jpg);
+    background-image: url(images/image5.jpg);
     animation-delay: 40s
 } 
 @keyframes myAnimation{
